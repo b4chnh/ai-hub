@@ -1,0 +1,16 @@
+.DS_Store
+.build/
+build/
+dist/
+scratch/
+backups/
+signing/
+Sources/
+Tests/
+AIHub.xcodeproj/
+project.yml
+Makefile
+*.entitlements
+Info.plist
+Widget-Info.plist
+scripts/

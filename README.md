@@ -1,4 +1,4 @@
-# AI Hub (v1.0.0)
+# AI Hub (v1.0.1)
 
 <p align="center">
   <img src="Resources/AppIcon.png" alt="AI Hub Icon" width="128" height="128">
@@ -11,7 +11,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/platform-macOS%2014.0%2B-black?style=flat-square&logo=apple" alt="macOS 14+">
   <img src="https://img.shields.io/badge/architecture-Apple%20Silicon-blue?style=flat-square&logo=apple" alt="Apple Silicon">
-  <img src="https://img.shields.io/badge/version-1.0.0-green?style=flat-square" alt="Version 1.0.0">
+  <img src="https://img.shields.io/badge/version-1.0.1-green?style=flat-square" alt="Version 1.0.1">
   <img src="https://img.shields.io/badge/Swift-5.10-orange?style=flat-square&logo=swift" alt="Swift 5.10">
   <img src="https://img.shields.io/badge/license-MIT-purple?style=flat-square" alt="License MIT">
 </p>
@@ -34,17 +34,19 @@
 - **Concentric Ring Gauges**: Real-time visual monitoring for Memory (Orange), CPU (Purple), and Disk (Teal).
 - **Comprehensive Hardware Specs**:
   - **Memory**: Active usage, total capacity, real-time free memory, and kernel memory pressure.
-  - **CPU**: Apple Silicon processor identification, core count, thread count, and thermal state.
+  - **CPU & Thermal**: Apple Silicon processor identification, core count, thread count, and live package temperature (°C) without sudo.
+  - **Top Processes**: Live top CPU and memory consumer ranking.
   - **Storage**: Used and total disk capacity, volume name, and available free space.
   - **Network Throughput**: Real-time Download (`↓`) and Upload (`↑`) throughput metrics and interface activity.
 
 ### ☁️ Cloud AI Quota Monitoring
 - Real-time rate-limit tracking for major AI coding assistants and models:
+  - **Antigravity (Google Cloud / Gemini)**: Auto-detected credentials from IDE with multi-window quota tracking (Gemini vs Claude/GPT).
   - **Codex (OpenAI)**
   - **Grok (xAI)**
   - **Claude (Anthropic)**
-  - **Antigravity (Google Cloud / Gemini)**
 - Clean, equal-width cards with progress indicators and countdown timers to quota reset.
+- Streamlined layout with compact sign-in controls for unconfigured providers.
 - Secure OAuth authentication stored strictly in the native macOS Keychain.
  
 ### 💻 Local AI Inference Management
@@ -54,9 +56,10 @@
   - **LM Studio**
 - Real-time online/offline status, port configuration, active model names, memory footprints, and 1-click model unloading to free unified RAM.
 
-### 🌐 Network Controls (L2 & VLAN Testing)
-- Instant network adapter interface inspection and configuration.
-- **DHCP Auto-Detection**: Live IP, Subnet mask, and Router display.
+### 🌐 Network Controls & ARP Scanner
+- **ARP Network Scanner**: Fast local subnet discovery with real-time ARP table lookup and ping sweeps.
+  - **Hardware OUI Detection**: Automatic identification for Enterprise Servers, SAN/NAS storage, Dell PowerEdge, HPE ProLiant, Synology, QNAP, and IP Cameras.
+  - **Quick IP Copy**: Instant 1-click clipboard copy for IP and MAC addresses.
 - **Fast Static IP Assignment**:
   - Optional Gateway (ideal for L2 isolated VLAN testing).
   - Smart subnet mask auto-completion (`255.255.255.X`).
@@ -81,7 +84,7 @@
 - **Permissions**: Standard user permissions (Administrator prompt only requested on-demand when applying network static IP profiles)
 
 ### Download & Install
-1. Download the latest `AI-Hub-v1.0.0.zip` from [GitHub Releases](https://github.com/b4chnh/AI-Hub/releases/latest).
+1. Download the latest `AI-Hub-v1.0.1.zip` from [GitHub Releases](https://github.com/b4chnh/AI-Hub/releases/latest).
 2. Unzip the downloaded file.
 3. Drag **AI Hub.app** into your `/Applications` folder.
 4. Open **AI Hub** from `/Applications` or Spotlight. An icon will appear in your macOS menu bar.
