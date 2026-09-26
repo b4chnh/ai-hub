@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Hub — từng tab trên menu bar</title>
+  <meta name="description" content="AI Hub là app menu bar cho macOS. Trang này liệt kê đúng những gì hiện trên Overview, Cloud AI, System, AI Local, cấu hình IP, ARP Scanner, Cài đặt và widget.">
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#top">
+      <img src="icon.png" width="28" height="28" alt="">
+      <span>AI Hub</span>
+    </a>
+    <nav>
+      <a href="#tabs" data-i="navTabs">Các tab</a>
+      <a href="https://github.com/b4chnh/ai-hub">GitHub</a>
+      <button type="button" id="lang" aria-label="English">EN</button>
+      <a class="dl" id="download" href="https://github.com/b4chnh/ai-hub/releases/latest">Tải DMG</a>
+    </nav>
+  </header>
+
+  <main id="app"></main>
+
+  <footer>
+    <img src="icon.png" width="22" height="22" alt="">
+    <span data-i="foot">AI Hub · app native cho macOS · MIT</span>
+    <a href="https://github.com/b4chnh/ai-hub">b4chnh/ai-hub</a>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
