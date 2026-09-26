@@ -3,30 +3,71 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI Hub — từng tab trên menu bar</title>
-  <meta name="description" content="AI Hub là app menu bar cho macOS. Trang này liệt kê đúng những gì hiện trên Overview, Cloud AI, System, AI Local, cấu hình IP, ARP Scanner, Cài đặt và widget.">
+  <title>AI Hub</title>
+  <meta name="description" content="AI Hub là app menu bar trên macOS. Bốn tab: Tổng quan, Cloud AI, Hệ thống, Điều khiển.">
   <link rel="icon" href="icon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="top">
-    <a class="brand" href="#top">
-      <img src="icon.png" width="28" height="28" alt="">
-      <span>AI Hub</span>
-    </a>
+    <a class="brand" href="#top"><img src="icon.png" width="28" height="28" alt=""> AI Hub</a>
     <nav>
-      <a href="#tabs" data-i="navTabs">Các tab</a>
       <a href="https://github.com/b4chnh/ai-hub">GitHub</a>
-      <button type="button" id="lang" aria-label="English">EN</button>
+      <button type="button" id="lang">EN</button>
       <a class="dl" id="download" href="https://github.com/b4chnh/ai-hub/releases/latest">Tải DMG</a>
     </nav>
   </header>
+  <main>
+    <section class="hero" id="top">
+      <p class="eyebrow" data-en="macOS 14 or later · Apple Silicon" data-vi="macOS 14 trở lên · Apple Silicon">macOS 14 trở lên · Apple Silicon</p>
+      <h1 data-en="Four tabs. One menu bar panel." data-vi="Bốn tab. Một panel trên menu bar.">Bốn tab. Một panel trên menu bar.</h1>
+      <p class="lede" data-en="Open AI Hub from the menu bar. The panel has Overview, Cloud AI, System, and Controls." data-vi="Bấm icon AI Hub trên menu bar. Panel có Tổng quan, Cloud AI, Hệ thống và Điều khiển.">Bấm icon AI Hub trên menu bar. Panel có Tổng quan, Cloud AI, Hệ thống và Điều khiển.</p>
+      <p class="actions"><a class="dl" id="hero-download" href="https://github.com/b4chnh/ai-hub/releases/latest">Tải DMG</a></p>
+    </section>
 
-  <main id="app"></main>
+    <section class="feature" id="overview">
+      <div>
+        <p class="kicker">Overview</p>
+        <h2 data-en="The Mac and the quotas, on one screen." data-vi="Máy và quota, trên một màn hình.">Máy và quota, trên một màn hình.</h2>
+        <p data-en="Three rings for RAM, CPU, and disk. Next to them: memory in use, the chip, free disk, and network speed. Under that, one card per connected account with the percent still left. Click a card to open Cloud AI." data-vi="Ba vòng RAM, CPU và ổ đĩa. Bên cạnh là bộ nhớ đang dùng, tên chip, dung lượng trống và tốc độ mạng. Phía dưới, mỗi tài khoản đã kết nối là một thẻ với phần trăm còn lại. Bấm thẻ để mở Cloud AI.">Ba vòng RAM, CPU và ổ đĩa. Bên cạnh là bộ nhớ đang dùng, tên chip, dung lượng trống và tốc độ mạng. Phía dưới, mỗi tài khoản đã kết nối là một thẻ với phần trăm còn lại. Bấm thẻ để mở Cloud AI.</p>
+      </div>
+      <img src="img/overview.png" alt="Tab Tổng quan: vòng RAM, CPU, ổ đĩa và thẻ Codex, Grok">
+    </section>
 
+    <section class="feature" id="cloud">
+      <div>
+        <p class="kicker">Cloud AI</p>
+        <h2 data-en="One card per account. One row per limit." data-vi="Mỗi tài khoản một thẻ. Mỗi hạn mức một hàng.">Mỗi tài khoản một thẻ. Mỗi hạn mức một hàng.</h2>
+        <p data-en="Codex, Grok, Claude, and Antigravity. A connected card shows each window, the percent left, and when it resets. A low window is marked. An account that is not connected stays in the list with a Sign in button." data-vi="Codex, Grok, Claude và Antigravity. Thẻ đã kết nối hiện từng cửa sổ, phần trăm còn, và lúc đặt lại. Cửa sổ sắp hết được đánh dấu. Tài khoản chưa kết nối nằm ở nhóm dưới, với nút Đăng nhập.">Codex, Grok, Claude và Antigravity. Thẻ đã kết nối hiện từng cửa sổ, phần trăm còn, và lúc đặt lại. Cửa sổ sắp hết được đánh dấu. Tài khoản chưa kết nối nằm ở nhóm dưới, với nút Đăng nhập.</p>
+      </div>
+      <img src="img/cloud.png" alt="Tab Cloud AI: thẻ Codex với tuần và 5 giờ, Grok, và Claude chưa kết nối">
+    </section>
+
+    <section class="feature" id="system">
+      <div>
+        <p class="kicker" data-en="System" data-vi="Hệ thống">Hệ thống</p>
+        <h2 data-en="The same Mac block, plus what is using it." data-vi="Cùng khối máy, cộng những gì đang chiếm máy.">Cùng khối máy, cộng những gì đang chiếm máy.</h2>
+        <p data-en="Memory splits into wired, active, compressed, inactive, free pages, and swap. Five processes, sorted by CPU or RAM, with Quit. Three charts cover the last five minutes: CPU, RAM, and download." data-vi="Bộ nhớ tách thành wired, active, đã nén, inactive, trang trống và swap. Năm tiến trình, sắp theo CPU hoặc RAM, có nút Thoát. Ba biểu đồ năm phút: CPU, RAM và tốc độ tải xuống.">Bộ nhớ tách thành wired, active, đã nén, inactive, trang trống và swap. Năm tiến trình, sắp theo CPU hoặc RAM, có nút Thoát. Ba biểu đồ năm phút: CPU, RAM và tốc độ tải xuống.</p>
+      </div>
+      <img src="img/system.png" alt="Tab Hệ thống: chi tiết bộ nhớ, top tiến trình và biểu đồ CPU, RAM">
+    </section>
+
+    <section class="feature" id="controls">
+      <div>
+        <p class="kicker" data-en="Controls" data-vi="Điều khiển">Điều khiển</p>
+        <h2 data-en="Set an address, or see who is on the link." data-vi="Đặt địa chỉ, hoặc xem ai đang ở trên mạng.">Đặt địa chỉ, hoặc xem ai đang ở trên mạng.</h2>
+        <p data-en="IP: pick the port, read the address, mask, and gateway. Leave DHCP on, or turn it off and type a static address, then Apply. Scan: search the current subnet. Each device is a card with IP, MAC, vendor, open ports, and buttons to open the web page or copy SSH, RTSP, and IP." data-vi="IP: chọn cổng, đọc địa chỉ, mask và gateway. Để DHCP, hoặc tắt đi rồi gõ IP tĩnh và bấm Áp dụng. Scan: quét dải đang dùng. Mỗi máy là một thẻ với IP, MAC, hãng, cổng mở, và nút mở web hoặc copy SSH, RTSP, IP.">IP: chọn cổng, đọc địa chỉ, mask và gateway. Để DHCP, hoặc tắt đi rồi gõ IP tĩnh và bấm Áp dụng. Scan: quét dải đang dùng. Mỗi máy là một thẻ với IP, MAC, hãng, cổng mở, và nút mở web hoặc copy SSH, RTSP, IP.</p>
+      </div>
+      <div class="shots">
+        <img src="img/controls.png" alt="Tab Điều khiển, ngăn Cấu hình IP: Wi-Fi, DHCP, gateway">
+        <img src="img/scan.png" alt="Ngăn ARP Scanner: thẻ router, switch và camera với cổng và nút copy">
+      </div>
+    </section>
+
+    <p class="fine" data-en="First launch: Control-click the app and choose Open. The download is the latest DMG." data-vi="Lần mở đầu: Control-click app rồi chọn Open. Nút tải là file DMG mới nhất.">Lần mở đầu: Control-click app rồi chọn Open. Nút tải là file DMG mới nhất.</p>
+  </main>
   <footer>
-    <img src="icon.png" width="22" height="22" alt="">
-    <span data-i="foot">AI Hub · app native cho macOS · MIT</span>
+    <span>AI Hub</span>
     <a href="https://github.com/b4chnh/ai-hub">b4chnh/ai-hub</a>
   </footer>
   <script src="app.js"></script>
